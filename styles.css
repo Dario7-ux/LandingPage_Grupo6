@@ -40,33 +40,4 @@ a .fab {
   transform: translate(-20px, -70px); /* para pantallas grandes */
 }
 
-/* En móviles, quitamos el desplazamiento */
-@media (max-width: 767.98px) {
-  .car-image {
-    transform: translate(0, 0);
-  }
-}
 
-/* Que el hero ocupe la pantalla y el contenido quede centrado */
-header.container{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-/* Subir la imagen y que siempre se vea completa al cargar */
-#carPanel .carousel-item img{
-  width: 100%;
-  height: auto;            /* mantiene proporción */
-  max-height: 72vh;        /* hace que quepa en la pantalla */
-  object-fit: contain;     /* no recorta la imagen */
-  transform: translateY(-40px);  /* súbela un poco */
-}
-
-/* En móviles: menos altura y sin subirla */
-@media (max-width: 768px){
-  #carPanel .carousel-item img{
-    max-height: 50vh;
-    transform: none;
-  }
-}
