@@ -32,3 +32,17 @@ a .fab {
     font-size: 30px;
     margin: 0 10px;
 }
+
+.car-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transform: translate(-20px, -70px); /* para pantallas grandes */
+}
+
+/* En móviles, quitamos el desplazamiento */
+@media (max-width: 767.98px) {
+  .car-image {
+    transform: translate(0, 0);
+  }
+}
