@@ -33,11 +33,6 @@ a .fab {
     margin: 0 10px;
 }
 
-.car-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transform: translate(-20px, -70px); /* para pantallas grandes */
-}
+
 
 
