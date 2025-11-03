@@ -16,12 +16,6 @@ body {
     margin-top: 70px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transform: translate(-20px, -70px); /* mueve la imagen un poco a la izquierda y hacia arriba */
-}
 
 .text-description {
     letter-spacing: 2px;
