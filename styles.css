@@ -33,6 +33,40 @@ a .fab {
     margin: 0 10px;
 }
 
+/* 1) Quitar espacio superior del hero */
+header.container{
+  min-height: 100vh;          /* sigue ocupando la pantalla */
+  display: flex;
+  align-items: flex-start;     /* alinea todo arriba */
+  padding-top: 0 !important;   /* sin padding arriba */
+}
+
+/* 2) Tu primer bloque tenía .my-4 que empuja hacia abajo */
+header.container .my-4{
+  margin-top: 0 !important;
+}
+
+/* 3) Ajustar el título grande dentro del hero para no generar salto extra */
+header.container .mt-4{
+  margin-top: .5rem !important;   /* antes eran 1.5rem */
+}
+
+/* 4) La imagen: que siempre quepa completa en la ventana */
+#carPanel .carousel-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 140px);  /* ajusta si hace falta */
+  object-fit: contain;               /* no recorta */
+  transform: none;                   /* sin desplazamientos */
+}
+
+/* En móviles: un poquito menos alto */
+@media (max-width: 768px){
+  #carPanel .carousel-item img{
+    max-height: calc(100vh - 180px);
+  }
+}
 
 
 
